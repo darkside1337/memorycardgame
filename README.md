@@ -15,7 +15,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone [repository_link]
+   git clone git@github.com:darkside1337/memorycardgame.git
    cd react-memory-card-game
    ```
 2. install dependencies:
@@ -40,4 +40,4 @@ To fetch Pokemon cards, this project uses PokeApi. You can replace this link wit
 
 ## Deployment
 
-This project is deployed and can be accessed at [DEPLOYED_LINK_HERE]. Enjoy playing the React Memory Card Game!
+This project is deployed and can be accessed at [https://main--bejewelled-arithmetic-49441a.netlify.app/]. Enjoy playing the React Memory Card Game!
