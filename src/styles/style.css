@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --clr-red: #EF5350;
+    --clr-yellow: #FFCB05;
+    --clr-blue: #3367B0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.yellow {
+    color: var(--clr-yellow);
+}
+
+.blue {
+    color: var(--clr-blue);
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1240px;
+}
+
+header {
+    min-height: 100px;
+    background-color: var(--clr-red);
+    color: white;
+    display: flex;
+    padding: 0 16px;
+    gap: 16px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+
+header .logo__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    padding: 16px;
+}
+
+.logo__section img {
+    width: 100px;
+}
+
+header .scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+
+.cards__container {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    transition: transform 0.2s ease-in;
+    border-radius: 16px;
+    box-shadow: 0 6.4px 14.4px 0 rgb(0 0 0 / 13%), 0 1.2px 3.6px 0 rgb(0 0 0 / 11%);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__img {
+    min-height: 80%;
+}
+
+.pokemon__name {
+    text-align: center;
+}
+
+.pokemon__name::first-letter {
+    text-transform: uppercase;
+}
+
+.winningScreen,
+.loosingScreen {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: rgba(0, 118, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+
+@media screen and (max-width: 492px) {
+    header {
+        flex-direction: column;
+    }
+}
